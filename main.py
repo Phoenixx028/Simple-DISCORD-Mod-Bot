@@ -10,7 +10,7 @@ def is_owner():
     return commands.check(predicate)
 
 # Create an instance of the bot
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='!',intents=intents)
 
 # Event to print a message in the console when the bot is ready
 @bot.event
