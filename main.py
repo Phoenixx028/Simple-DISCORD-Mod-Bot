@@ -13,7 +13,7 @@ def is_owner():
 intents = discord.Intents.all()
 
 # Create an instance of the bot
-bot = commands.Bot(command_prefix='!',intents=intents)
+bot = commands.Bot(command_prefix='!',intents=intents, help_command=None)
 
 # Event to print a message in the console when the bot is ready
 @bot.event
