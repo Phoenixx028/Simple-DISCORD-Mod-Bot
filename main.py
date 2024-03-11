@@ -6,7 +6,7 @@ from keep_alive import keep_alive
 # Custom decorator to check if the command is invoked by the owner
 def is_owner():
     async def predicate(ctx):
-        return ctx.author.id == 944940073756028929  # Replace YOUR_OWNER_ID_HERE with your actual Discord user ID
+        return ctx.author.id == 1211883781494022174  # Replace YOUR_OWNER_ID_HERE with your actual Discord user ID
     return commands.check(predicate)
 
 # Create an instance of the bot
