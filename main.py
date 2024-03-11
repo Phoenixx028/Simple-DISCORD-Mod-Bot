@@ -9,6 +9,9 @@ def is_owner():
         return ctx.author.id == 1211883781494022174  # Replace YOUR_OWNER_ID_HERE with your actual Discord user ID
     return commands.check(predicate)
 
+# Define intents
+intents = discord.Intents.all()
+
 # Create an instance of the bot
 bot = commands.Bot(command_prefix='!',intents=intents)
 
